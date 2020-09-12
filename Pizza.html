@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PizzaCalculator</title>
+</head>
+<body>
+	<h1>Saeed's Pizzeria</h1>
+	<script type="text/javascript">
+		alert("De Prijzen van onze pizza's:")
+		alert("small pizza = 8€,")
+		alert("medium pizza = 12€,")
+		alert("large pizza = 16€")
+
+		small = prompt("Hoeveel small pizza's wilt u?")
+		medium = prompt("Hoeveel medium pizza's wilt u?")
+		large = prompt("Hoeveel large pizza's wilt u?")
+
+		document.write("Uw bestelling is <br>")
+		aantaltotal = Number(small) + Number(medium) + Number(large)
+
+
+		document.write(small + "small pizza's <br>")
+		document.write(medium + "medium pizza's <br>")
+		document.write(large + "large pizza's <br>")
+		document.write(aantaltotal + "totaal pizza's <br>")
+
+		document.write("Uw order kost:<br>")
+
+		const prijssmall = 8
+		const prijsmedium = 12
+		const prijslarge = 16
+
+		small = (small * prijssmall);
+		medium = (medium * prijsmedium);
+		large = (large * prijslarge);
+
+		const prijs = Number(small) + Number(medium) + Number(large)
+		document.write("€" + prijs)
+
+/* Saeed Kattoub
+Opleiding: Software Develpoment
+Opdracht: Pizza Calcualtor
+*/
+	</script>
+
+</body>
+</html>
